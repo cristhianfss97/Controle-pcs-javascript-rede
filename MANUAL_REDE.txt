@@ -1,0 +1,40 @@
+PROJETO PREPARADO PARA VÁRIAS MÁQUINAS NA MESMA REDE
+
+1) INSTALAR DEPENDÊNCIAS
+- Abra a pasta do projeto no terminal
+- Rode: npm install
+
+2) CONFIGURAR O .ENV
+- Renomeie ".env.example" para ".env"
+- Ajuste o banco se necessário
+- O projeto já vem com:
+  HOST=0.0.0.0
+  PORT=3000
+
+Isso faz o Node aceitar conexões de outras máquinas da rede.
+
+3) BANCO DE DADOS
+- Execute o arquivo database.sql no MySQL Workbench
+
+4) INICIAR
+- Rode: npm run dev
+
+5) DESCOBRIR O IP DA MÁQUINA SERVIDOR
+- No Windows, rode: ipconfig
+- Procure "Endereço IPv4"
+
+6) ACESSAR DE OUTRA MÁQUINA
+- No navegador de outra máquina:
+  http://IP_DO_SERVIDOR:3000
+  Exemplo:
+  http://192.168.0.10:3000
+
+7) FIREWALL
+- Libere a porta 3000 no Firewall do Windows da máquina servidor
+
+OBSERVAÇÃO:
+- As outras máquinas acessam só pelo navegador
+- Apenas a máquina servidor precisa ter Node.js e MySQL
+
+8) VISUAL
+- Esta versão inclui um CSS mais bonito, mais leve aos olhos e mais humanizado para uso diário.

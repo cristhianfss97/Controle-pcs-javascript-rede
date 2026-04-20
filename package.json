@@ -1,0 +1,17 @@
+{
+  "name": "controle-pcs-javascript-rede",
+  "version": "1.0.0",
+  "description": "Sistema de controle de PCs para clínicas com acesso em rede local",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.11.3"
+  }
+}
